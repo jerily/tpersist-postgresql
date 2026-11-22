@@ -1,0 +1,26 @@
+{
+  "name": "tpersist-postgresql",
+  "version": "0.1.8",
+  "license": "MIT",
+  "dependencies": {
+    "tdbcpostgres": ">=1.1.8",
+    "libpq": "^16.15.0"
+  },
+  "build": {
+    "default": [
+      {
+        "cmd": "cd",
+        "dirname": "$SOURCE_DIR"
+      },
+      {
+        "cmd": "make_install",
+        "options": [
+          {
+            "name": "PREFIX",
+            "value": "$INSTALL_DIR"
+          }
+        ]
+      }
+    ]
+  }
+}
